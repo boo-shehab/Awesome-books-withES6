@@ -9,6 +9,45 @@
 </head>
 <body>
     
-    <script src="index.js"></script>
+    <header>
+        <nav>
+            <div>Awesome books</div>
+            <ul>
+                <li data-link="list" class="active">list</li>
+                <li data-link="add-new" >Add new</li>
+                <li data-link="contact" >contact</li>
+            </ul>
+        </nav>
+    </header>
+    <p class="time"></p>
+    <section id="books-list">
+        <h1>Awesome book</h1>
+        <div id="books-container">
+    
+        </div>
+    </section>
+    <form action="">
+        <h1>Add a new book</h1>
+        <label for="title" hidden>Title</label>
+        <input type="text" id="title">
+        <br>
+        <label for="author" hidden>Author</label>
+        <input type="text" id="author">
+        <br>
+        <button type="submit" id="submit">add</button>
+    </form>
+    <section id="contact">
+        <h1>Contact information</h1>
+        <p>Do you have any questions or just want to sat "Hello"?</p>
+        <p>You can reach out to us!</p>
+        <ul>
+            <li>Our email.com</li>
+            <li>Our phone number 100000055</li>
+            <li>Our address 44th street California</li>
+        </ul>
+    </section>
+    <footer> <p> Copyright...</p></footer>
+
+    <script type="module" src="index.js"></script>
 </body>
 </html>
