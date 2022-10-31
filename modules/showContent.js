@@ -2,7 +2,7 @@ const form = document.querySelector('form');
 const contact = document.querySelector('#contact');
 const booksList = document.querySelector('#books-list');
 
-export default function showContents(id) {
+export default (id) => {
   document.querySelectorAll('header ul li').forEach((ele) => ele.classList.remove('active'));
   id.classList.add('active');
   switch (id.getAttribute('data-link')) {
@@ -26,4 +26,4 @@ export default function showContents(id) {
       form.style.display = 'none';
       contact.style.display = 'none';
   }
-}
+};

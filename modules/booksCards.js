@@ -18,5 +18,7 @@ submitButton.addEventListener('click', (e) => {
     books.add(list);
     books.setLocalStorage();
     books.displaybooks(books);
+    bookTitle.value = '';
+    author.value = '';
   }
 });
